@@ -64,14 +64,4 @@ public class WorkersList<W extends Worker> implements Iterable<W>{
         };
         return iter;
     }
-
-    @Override
-    public void forEach(Consumer action) {
-        Iterable.super.forEach(action);
-    }
-
-    @Override
-    public Spliterator spliterator() {
-        return Iterable.super.spliterator();
-    }
 }

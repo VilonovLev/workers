@@ -2,6 +2,9 @@ package data;
 
 import java.util.Objects;
 
+
+
+
 public abstract class Worker implements Comparable<Worker>{
     private String name;
     public abstract int getSalary();
@@ -37,6 +40,10 @@ public abstract class Worker implements Comparable<Worker>{
                 '}';
     }
 
+    /**
+     * @param worker the object to be compared.
+     * @return
+     */
     @Override
     public int compareTo(Worker worker) {
         int result = Integer.compare(this.getSalary(),worker.getSalary());
