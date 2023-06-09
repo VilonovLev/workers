@@ -50,6 +50,6 @@ public abstract class Worker implements Comparable<Worker>{
         if (result == 0) {
             result = this.name.compareTo(worker.getName());
         }
-        return Integer.compare(this.getSalary(),worker.getSalary());
+        return result;
     }
 }
